@@ -6,6 +6,7 @@ plot1Mf <- function(IsMf) {
     
     hpc <- plot.get_data()
     
+    plot.set_par()
     hist(hpc$Global_active_power, col="red",
          main="Global Active Power", 
          xlab="Global Active Power (kilowatts)")

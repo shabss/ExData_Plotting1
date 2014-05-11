@@ -39,6 +39,7 @@ plot4_4 <- function() {
 
 #Plot4 function for to all 4 frames
 plot4 <- function() {
+    plot.set_par()
     par(mfrow = c(2,2))
     plot4_1()
     plot4_2()

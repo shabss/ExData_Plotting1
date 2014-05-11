@@ -50,3 +50,9 @@ plot.save_data <- function(filename){
     dev.copy(png, file=filename, width = 480, height = 480)
     dev.off()
 }
+
+#plot.set_par : Sets values for par
+plot.set_par <- function(){
+    
+    par(cex = 0.7)
+}

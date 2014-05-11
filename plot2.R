@@ -6,6 +6,8 @@ source("plot_common.R")
 #Plot2 function for multi frame
 plot2Mf <- function(IsMf) {
     hpc <- plot.get_data()
+    
+    plot.set_par()
     ylab <- if (IsMf) {
         "Global Active Power"
     } else {
