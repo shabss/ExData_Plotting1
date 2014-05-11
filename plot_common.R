@@ -53,6 +53,6 @@ plot.save_data <- function(filename){
 
 #plot.set_par : Sets values for par
 plot.set_par <- function(){
-    
+    #par(cex = 1)
     par(cex = 0.7)
 }
