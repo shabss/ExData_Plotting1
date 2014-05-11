@@ -47,6 +47,6 @@ plot.get_data <- function() {
 #plot.save_data : Saves the plot from video graphics device to png device
 
 plot.save_data <- function(filename){
-    dev.copy(png, file=filename, width = 800, height = 800)
+    dev.copy(png, file=filename, width = 480, height = 480)
     dev.off()
 }
