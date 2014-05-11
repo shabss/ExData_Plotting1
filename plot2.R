@@ -3,6 +3,7 @@ source("plot_common.R")
 #######################
 #######################
 
+#Plot2 function for multi frame
 plot2Mf <- function(IsMf) {
     hpc <- plot.get_data()
     ylab <- if (IsMf) {
@@ -21,7 +22,7 @@ plot2Mf <- function(IsMf) {
     }    
 }
 
-
+#Plot2 function for single frame
 plot2 <- function() {
     invisible(plot2Mf(FALSE))
 }

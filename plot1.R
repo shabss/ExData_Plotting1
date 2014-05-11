@@ -1,6 +1,7 @@
 
 source("plot_common.R")
 
+#Plot1 function for multi frame
 plot1Mf <- function(IsMf) {
     
     hpc <- plot.get_data()
@@ -14,6 +15,7 @@ plot1Mf <- function(IsMf) {
     }
 }
 
+#Plot1 function for single frame
 plot1 <- function() {
     invisible(plot1Mf(FALSE))
 }

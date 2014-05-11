@@ -1,6 +1,13 @@
+#This file contains helper functions that are used for
+#rest of the plotting files
 
 library(data.table)
 
+
+#plot.get_data : Downlods house power consumption data from the url
+#                and locally and unzips. Then subsets the data to return
+#                only the rows corresponding to dates 01-Feb-2007 &
+#                02-Feb-2007. Converts values to their numeric equivalents
 plot.get_data <- function() {
     
     file.name <- "household_power_consumption.txt"
@@ -35,6 +42,9 @@ plot.get_data <- function() {
     setnames(data.hpc, tail(colnames(data.hpc), 2), c("Date", "Time"))
     data.hpc
 }
+
+
+#plot.save_data : Saves the plot from video graphics device to png device
 
 plot.save_data <- function(filename){
     dev.copy(png, file=filename, width = 800, height = 800)

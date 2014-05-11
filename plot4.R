@@ -5,10 +5,12 @@ source("plot3.R")
 #######################
 #######################
 
+#Plot4 function for to draw 1,1 (top left) frame
 plot4_1 <- function() {
     plot2Mf(TRUE)
 }
 
+#Plot4 function for to draw 1,2 (top right) frame
 plot4_2 <- function() {
     hpc <- plot.get_data()
     
@@ -19,10 +21,12 @@ plot4_2 <- function() {
     axis(1, at=c(1, nrow(hpc)/2, nrow(hpc)), labels=c("Thu", "Fri", "Sat"))    
 }
 
+#Plot4 function for to draw 2,1 (bottom left) frame
 plot4_3 <- function() {
     plot3Mf(TRUE)
 }
 
+#Plot4 function for to draw 2,2 (bottom right) frame
 plot4_4 <- function() {
     hpc <- plot.get_data()
     
@@ -33,6 +37,7 @@ plot4_4 <- function() {
     axis(1, at=c(1, nrow(hpc)/2, nrow(hpc)), labels=c("Thu", "Fri", "Sat"))    
 }
 
+#Plot4 function for to all 4 frames
 plot4 <- function() {
     par(mfrow = c(2,2))
     plot4_1()
